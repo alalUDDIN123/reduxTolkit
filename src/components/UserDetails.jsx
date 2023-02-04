@@ -1,8 +1,11 @@
 import React from "react";
 import { DeleteAllUser } from "./DeleteAllUser";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 
 const UserDetails = () => {
+  const userDetails=useSelector(store=>store.users)
+  console.log(userDetails)
   return (
     <Wrapper>
       <div className="content">
